@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* This changes the rem sizing to 10px*/
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+
+    background-color: #1E0555;
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    /* Gets rid of scrollbar */
+
+}
+
+.container {
+    background-color: cadetblue;
+    padding: 2rem;
+
+    border-radius: 1rem;
+    width: 70rem;
+    max-width: 90%;
+    /* Meaning that the max width AT ALL TIMES will only be 90% of the screen */
+
+}
+
+.timer {
+    position: absolute;
+    top: 3rem;
+
+    font-size: 10rem;
+    font-weight: 700;
+    color: #5f9ea0;
+}
+
+.quote-display {
+    margin-bottom: 2rem;
+
+    margin-left: calc(1.5rem + 2px);
+    margin-right: calc(1.5rem + 2px);
+    /* these two things ensure that the text within the box is lined up with the text in the display */
+}
+
+.quote-input {
+    background-color: transparent;
+    border: 2px solid #567778;
+    border-radius: 1rem;
+    outline: none;
+    /* disables outline when cliked on it (focus state) */
+
+    padding: 1.5rem;
+    width: 100%;
+    height: 30rem;
+    margin: auto;
+    /* margin auto basically ensures its always centered */
+
+    resize: none;
+    /* textinput box cant be resized */
+
+    font-size: 2rem;
+}
+
+.quote-input:focus {
+    border-color: black;
+}
+
+/* highlighting the focus state since outline is gone */
+
+/*? Colours */
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+    text-decoration: underline;
+}
